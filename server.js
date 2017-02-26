@@ -66,18 +66,16 @@ const server = http.createServer((req, res) => {
 					let lastLine = dataByLines[dataByLines.length - 2].split(',');
 					let jsonData = {
 						date: lastLine[0],
-						ODTemp: lastLine[2],
-						ODHumi: lastLine[4],
+						ODTemp: lastLine[1],
+						Humidity: lastLine[2],
 						dewPt: lastLine[3],
-						IDTemp: lastLine[1],
-						IDHumi: lastLine[5],
-						windDir: lastLine[6],
-						windSpd: lastLine[7],
-						heatIndex: lastLine[8],
-						windChill: lastLine[9],
-						rainFall: lastLine[10],
-						pressure: lastLine[11],
-						signalStr: lastLine[12]
+						IDTemp: lastLine[6],
+						windDir: lastLine[8],
+						windSpd: lastLine[9],
+						heatIndex: lastLine[5],
+						windChill: lastLine[4],
+						rainFall: lastLine[7],
+						pressure: lastLine[11]
 					};
 					res.end(JSON.stringify(jsonData));
 				})
