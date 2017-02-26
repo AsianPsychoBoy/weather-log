@@ -1,0 +1,78 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-size: 5rem;
+	margin: 0 0 2rem
+}
+
+h3 {
+	font-size: 2.5rem;
+}
+
+#alert {
+	height: 10rem;
+	position: fixed;
+	top: -10rem;
+}
+
+#wind-arrow {
+	margin-left: 1rem;
+	width: 3rem;
+	height: 3rem;
+	fill: currentColor;
+	stroke: currentColor;
+}
+
+.grid {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.grid-row {
+	display: flex;
+}
+
+.grid-item {
+	display: flex;
+	width: 50%;
+	height: calc(50vh - 4rem);
+	padding: 2rem;
+}
+
+.grid-item div {
+	width: 100%;
+}
+
+.top-left {
+	background-color: #ED6A5A;
+	color: #F4F1BB;
+}
+.top-right {
+	background-color: #F4F1BB;
+	color: #5D576B;
+}
+.bottom-left {
+	background-color: #9BC1BC;
+	color: #ED6A5A;
+}
+.bottom-right {
+	background-color: #5D576B;
+	color: #9BC1BC;
+}
+
+.data-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.data-group h3 {
+	text-align: center;
+	flex-basis: 50%;
+	white-space: nowrap;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "weather-log",
+  "version": "1.0.0",
+  "description": "Display weather data on a webpage",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsianPsychoBoy/weather-log.git"
+  },
+  "author": "Jack Cai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AsianPsychoBoy/weather-log/issues"
+  },
+  "homepage": "https://github.com/AsianPsychoBoy/weather-log#readme",
+  "dependencies": {
+    "csv-parse": "^1.2.0"
+  }
+}
